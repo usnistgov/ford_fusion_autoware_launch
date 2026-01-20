@@ -4,12 +4,13 @@
       enable: $(var user_defined_initial_pose/enable)
       pose: $(var user_defined_initial_pose/pose)
 
-    gnss_pose_timeout: 3.0 # [sec]
+    gnss_pose_timeout: 60.0 # [sec]
     stop_check_duration: 3.0 # [sec]
     pose_error_threshold: 5.0 # [m]
     pose_error_check_enabled: false
     ekf_enabled: $(var ekf_enabled)
-    gnss_enabled: $(var gnss_enabled)
+    # gnss_enabled: $(var gnss_enabled)
+    gnss_enabled: false
     yabloc_enabled: $(var yabloc_enabled)
     ndt_enabled: $(var ndt_enabled)
     stop_check_enabled: $(var stop_check_enabled)
